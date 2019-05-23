@@ -18,6 +18,8 @@ npm install clipboard --save
 这样是一个方式，但是，经过实践，确实不能达到要求
 
 1.#查看clipboard API
+=======
+
 <br>
 [clipboard API](https://w3c.github.io/clipboard-apis/#override-copy)
 <br>
@@ -29,16 +31,20 @@ npm install clipboard --save
 但是文档对使用images的介绍却这样说:
 
 <br>
+
 ```
 To prevent malicious image data from being placed on the clipboard, the image data may be transcoded to produce a safe version of the image.
 ```
+
 <br>
 
 
-意思大概就是，要保证安全模式下进行复制图片（(＃￣～￣＃)，对如何复制图片是一点都没有讲解，我去看了github 上的issues，有人确认提出如何copy img，结果到了最后，竟然发现都是在讨论，在复制图片的时候如何保证安全性，通过浏览器的认证）
+意思大概就是，要保证安全模式下进行复制图片（ (＃￣～￣＃)，对如何复制图片是一点都没有讲解，我去看了github 上的issues，有人确认提出如何copy img，结果到了最后，竟然发现都是在讨论，在复制图片的时候如何保证安全性，通过浏览器的认证）
 <br>
+
 我就想默默，如果是存在服务器的图片，应该是已经经过安全校验单的吧0.0
 <br>
+
 看看源码吧，还是有方法的，这里确认通过另一种方式实现的
 <br>
 
