@@ -17,14 +17,19 @@ npm install clipboard --save
 <br>
 这样是一个方式，但是，经过实践，确实不能达到要求
 
-1.#查看clipboard API
+1.查看clipboard API
 =======
 
 <br>
-[clipboard API](https://w3c.github.io/clipboard-apis/#override-copy)
+
+![clipboard API](https://w3c.github.io/clipboard-apis/#override-copy)
+
 <br>
+
 其中有这么介绍
+
 ![image](https://github.com/Velg03961485/take-vue-copy-img-by-clipboard/blob/master/img/APIType.png)
+
 <br>
 是可以使用iamges的类型进行粘贴复制的
 <br>
@@ -49,10 +54,14 @@ To prevent malicious image data from being placed on the clipboard, the image da
 <br>
 
 
-#实现copy
+2.实现copy
+=======
+
 <br>
 
-4.####安装完后，要在页面js中import引入
+2.1安装完后，要在页面js中import引入
+---------
+
 <br>
 ```
 import Clipboard from 'clipboard';
@@ -61,7 +70,9 @@ import Clipboard from 'clipboard';
 不要问为什么不在全局，因为我测试在全局的时候，会发现new 的函数会找不到
 <br>
 
-4.####vue中
+2.2vue中
+---------
+
 <br>
 
 ```
@@ -92,7 +103,9 @@ wechat-copy-main id 也是必须存在的，这里会通过getElementById，找�
 img的地址，一定要去掉 http:
 <br>
 
-4.####js中
+2.3js中
+---------
+
 <br>
 
 ```
