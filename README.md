@@ -152,5 +152,38 @@ copyFunction(t, a){
 <br>
 并能直接copy到微信的对话中
 
+<br>
+
+2.3测试
+---------
+
+<br>
+
+通过 Chrome 浏览器测试 （ Windows ）
+
+<br>
+
+通过 搜狗 浏览器测试   （ Windows ）
+
+<br>
+
+通过 IE 11 浏览器测试   （ Windows ）
+
+
+
+2.延伸
+=======
+
+<br>
+
+同样的方式也可以使用原生Jquery来实现
+
+<br>
+
+这里附带源码地址
+
+
+[clipboard.js](https://github.com/Velg03961485/take-vue-copy-img-by-clipboard/blob/master/js/clipboard.js)
+
 
 
