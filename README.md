@@ -22,7 +22,7 @@ npm install clipboard --save
 
 <br>
 
-![clipboard API](https://w3c.github.io/clipboard-apis/#override-copy)
+[clipboard API](https://w3c.github.io/clipboard-apis/#override-copy)
 
 <br>
 
@@ -63,9 +63,11 @@ To prevent malicious image data from being placed on the clipboard, the image da
 ---------
 
 <br>
+
 ```
 import Clipboard from 'clipboard';
 ```
+
 <br>
 不要问为什么不在全局，因为我测试在全局的时候，会发现new 的函数会找不到
 <br>
@@ -91,16 +93,20 @@ import Clipboard from 'clipboard';
 这里的讲解:
 <br>
 
-aaa id  是必须存在的，因为要通过这个id触发函数，虽然这里不是JQuery 0.0
+`aaa id  是必须存在的，因为要通过这个id触发函数，虽然这里不是JQuery 0.0`
+
 <br>
 
-复制的元素的是img，这个img的标签必须被一个div标签包裹着，需要通过，外部元素的id找到里面的Img的内容
+`复制的元素的是img，这个img的标签必须被一个div标签包裹着，需要通过，外部元素的id找到里面的Img的内容`
+
 <br>
 
-wechat-copy-main id 也是必须存在的，这里会通过getElementById，找到img
+`wechat-copy-main id 也是必须存在的，这里会通过getElementById，找到img`
+
 <br>
 
-img的地址，一定要去掉 http:
+`img的地址，一定要去掉 http:`
+
 <br>
 
 2.3js中
